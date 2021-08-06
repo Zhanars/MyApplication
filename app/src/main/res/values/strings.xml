@@ -7,4 +7,5 @@
     <string name="profile_text">Profile</string>
     <string name="info_text">Info</string>
     <string name="document_text">Document</string>
+    <string name="notification_text">Notification</string>
 </resources>
