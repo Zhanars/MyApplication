@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">АТУ app</string>
+    <string name="logo_icon">Logo</string>
+    <string name="contact_text">Контакты</string>
+    <string name="home_text">Главная</string>
+    <string name="service_text">Услуги</string>
+    <string name="profile_text">Профиль</string>
+    <string name="info_text">Информация</string>
+    <string name="document_text">Документы</string>
+</resources>
