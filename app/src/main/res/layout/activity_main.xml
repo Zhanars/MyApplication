@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/mainBgColor">
+    android:background="@color/mainBgColor"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/logo_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,62 +24,81 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/contacts"
-            android:layout_width="70dp"
-            android:layout_height="67dp"
-            android:fontFamily="@font/montserrat"
-            android:gravity="center_vertical"
-            android:text="@string/contact_text"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14sp"
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/service"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/profile"
-            android:layout_width="70dp"
-            android:layout_height="67dp"
-            android:fontFamily="@font/montserrat"
-            android:gravity="center_vertical"
-            android:text="@string/profile_text"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/home"
-            android:layout_width="70dp"
-            android:layout_height="67dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:gravity="center_vertical"
-            android:text="@string/home_text"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:srcCompat="@drawable/ic_home" />
 
-        <TextView
-            android:id="@+id/service"
-            android:layout_width="70dp"
-            android:layout_height="67dp"
-            android:fontFamily="@font/montserrat"
-            android:gravity="center_vertical"
-            android:text="@string/service_text"
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:contextClickable="false"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="14sp"
+            android:tooltipText="Услуги"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/home"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_service" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_alert" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_info" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_document2" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
