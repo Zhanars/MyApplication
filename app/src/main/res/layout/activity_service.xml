@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_bold"
-            android:text="@string/home_text"
+            android:text="@string/service_text"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,6 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:contentDescription="@string/home_text"
-            android:onClick="onClickBtnHome"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnService"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +68,6 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:contentDescription="@string/service_text"
-            android:onClick="onClickBtnService"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnDocument"
             app:layout_constraintStart_toEndOf="@+id/btnHome"
@@ -129,6 +127,7 @@
             app:srcCompat="@drawable/ic_document2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -137,6 +136,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/serviceRecycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbarSize="10dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

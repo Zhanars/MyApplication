@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".activity_notification"
+            android:exported="true" />
+        <activity
+            android:name=".activity_document"
+            android:exported="true" />
+        <activity
+            android:name=".activity_info"
+            android:exported="true" />
+        <activity
+            android:name=".activity_profile"
+            android:exported="true" />
+        <activity
+            android:name=".activity_service"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -18,6 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
