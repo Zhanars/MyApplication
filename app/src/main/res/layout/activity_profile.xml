@@ -4,6 +4,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_profile">
+    android:background="@color/mainBgColor"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/asideBgColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/logo_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_logo" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/home_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgLogo"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/asideBgColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/home_text"
+            android:onClick="onClickBtnHome"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnService"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/btnService"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/service_text"
+            android:onClick="onClickBtnService"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnDocument"
+            app:layout_constraintStart_toEndOf="@+id/btnHome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_service" />
+
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="3dp"
+            android:contentDescription="@string/profile_text"
+            android:onClick="onClickBtnProfile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnNotification"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <ImageView
+            android:id="@+id/btnNotification"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/notification_text"
+            android:onClick="onClickBtnNotification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnProfile"
+            app:layout_constraintStart_toEndOf="@+id/btnInfo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_alert" />
+
+        <ImageView
+            android:id="@+id/btnInfo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/info_text"
+            android:onClick="onClickBtnDocument"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnNotification"
+            app:layout_constraintStart_toEndOf="@+id/btnDocument"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_info" />
+
+        <ImageView
+            android:id="@+id/btnDocument"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/document_text"
+            android:onClick="onClickBtnDocument"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnInfo"
+            app:layout_constraintStart_toEndOf="@+id/btnService"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_document2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/asideBgColor"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class activity_notification extends AppCompatActivity {
+public class activity_notification extends menu_onclick {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

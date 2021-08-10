@@ -12,7 +12,7 @@ import com.example.myapplication.models.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_service extends AppCompatActivity {
+public class activity_service extends menu_onclick {
 
     RecyclerView serviceRecycler;
     ServiceAdapter serviceAdapter;

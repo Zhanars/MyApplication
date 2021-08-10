@@ -60,7 +60,8 @@
             app:layout_constraintEnd_toStartOf="@+id/btnService"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_home" />
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <ImageView
             android:id="@+id/btnService"
@@ -83,6 +84,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="3dp"
             android:contentDescription="@string/profile_text"
+            android:onClick="onClickBtnProfile"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnNotification"
@@ -96,6 +98,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:contentDescription="@string/notification_text"
+            android:onClick="onClickBtnNotification"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnProfile"
             app:layout_constraintStart_toEndOf="@+id/btnInfo"
@@ -109,6 +112,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:contentDescription="@string/info_text"
+            android:onClick="onClickBtnDocument"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnNotification"
             app:layout_constraintStart_toEndOf="@+id/btnDocument"
@@ -122,6 +126,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:contentDescription="@string/document_text"
+            android:onClick="onClickBtnDocument"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnInfo"
             app:layout_constraintStart_toEndOf="@+id/btnService"
